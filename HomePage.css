@@ -1,0 +1,42 @@
+/* h1 {
+  color: blue;
+
+} */
+
+/* #HeadingID {
+    color:beige;
+} */
+
+.HeadingClass {
+  letter-spacing: 20px;
+  font-weight: bolder;
+  font-family: "Segoe UI", fantasy;
+  text-shadow: 2px 2px #000;
+  color: bisque;
+  text-align: center;
+}
+.HomePageParaClass {
+  color: rgba(255, 255, 255, 0.63);
+  text-align: center;
+}
+.VidOptions {
+  text-align: center;
+}
+.button {
+  background-color: cadetblue;
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 0px 10px;
+}
+.buttonGroup {
+  margin: 20px 0px;
+}
+header {
+  padding: 10px;
+  background-color: rgb(15, 106, 106);
+}
+body {
+  margin: 0px;
+}
