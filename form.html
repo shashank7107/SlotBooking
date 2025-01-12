@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <main class="formClass">
+    <main class="formClass" id="mainKaId">
       <!-- appointment booking -->
       <header>
         <h1 class="headerText">Book Your Appointment</h1>
@@ -16,32 +16,34 @@
       <p class="FormParaClass"><em>please enter the following details</em></p>
       <!-- form submission action -->
       <form onsubmit="OnFormSubmit(event)" id="myForm">
-        <!-- first name -->
-        <lable for="name">First Name:</lable>
-        <input type="text" required />
-        <br />
+        <div class="formContent">
+          <!-- first name -->
+          <lable for="name">First Name:</lable>
+          <input type="text" required />
+          <br />
 
-        <!-- last name -->
-        <lable for="text"> Mail ID:</lable>
-        <input type="email" required />
-        <br />
+          <!-- email id -->
+          <lable for="text"> Mail ID:</lable>
+          <input type="email" required />
+          <br />
 
-        <!-- gender selection -->
-        <!-- 
+          <!-- gender selection -->
+          <!-- 
       <input type="radio" id="male" value="male" />
       <label for="male">Male</label>
       <input type="radio" id="female" value="female" />
       <label for="female">Female</label> -->
-        <label>Gender</label>
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label><br />
+          <label>Gender</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
 
-        <button type="submit" role="button">submit</button>
+          <button type="submit" role="button">submit</button>
+        </div>
       </form>
-
-      <div id="resultText"></div>
+      <!--Dynamically created-->
+      <!-- <div id="resultText">Test default msg</div> -->
     </main>
   </body>
 </html>

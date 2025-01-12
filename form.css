@@ -4,6 +4,33 @@
 .FormParaClass {
   text-align: center;
 }
-.formClass {
+
+header {
+  background-color: rgb(15, 106, 106);
+  padding: 30px;
+}
+#myForm {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#resultText,
+.formContent {
   text-align: center;
+}
+
+#resultText {
+  /* animation: fadeInAnimation duration timing-function delay iteration-count direction fill-mode; */
+  animation: fadeInAnimation 3s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
