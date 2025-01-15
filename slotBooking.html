@@ -18,14 +18,14 @@
       <form onsubmit="OnFormSubmit(event)" id="myForm">
         <div class="formContent">
           <!-- first name -->
-          <lable for="name">First Name:</lable>
-          <input type="text" />
+          <lable for="name">Your Name:</lable>
+          <input type="text" required />
           <br />
           <br />
 
           <!-- email id -->
           <lable for="text"> Mail ID:</lable>
-          <input type="email" />
+          <input type="email" required />
           <br />
           <br />
 
@@ -36,14 +36,20 @@
       <input type="radio" id="female" value="female" />
       <label for="female">Female</label> -->
           <label>Gender</label>
-          <input type="radio" id="male" name="gender" value="male" />
+          <input type="radio" id="male" name="gender" value="male" required />
           <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female" />
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
           <label for="female">Female</label><br />
           <br />
 
           <label for="date"> select your date </label>
-          <input type="datetime-local" id="date" />
+          <input type="datetime-local" id="date" required />
           <br />
           <br />
           <!-- checkboxes for services selection -->

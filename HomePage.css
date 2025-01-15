@@ -33,6 +33,7 @@
   padding: 8px 12px;
   border-radius: 8px;
   margin: 0px 10px;
+  border: 0.5px dashed #fff;
 }
 .buttonGroup {
   margin: 20px 0px;

@@ -34,6 +34,7 @@ header {
   border-radius: 6px;
   padding: 6px;
   border: 1px dashed;
+  color: bisque;
 }
 
 @keyframes fadeInAnimation {
@@ -53,10 +54,19 @@ header {
   font-weight: bolder;
 }
 body {
-  background-image: url("https://media.istockphoto.com/id/1463137828/photo/3d-render-of-beauty-spa-saloon.jpg?s=612x612&w=0&k=20&c=-pkHokMX_f7t0xfvNkLsXOSsDVSYhfDz0yMrsrRU_Tg=");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://media.istockphoto.com/id/1463137828/photo/3d-render-of-beauty-spa-saloon.jpg?s=612x612&w=0&k=20&c=-pkHokMX_f7t0xfvNkLsXOSsDVSYhfDz0yMrsrRU_Tg=");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .checkboxes {
   margin: 35px 0px;
 
