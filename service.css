@@ -1,0 +1,26 @@
+.heading {
+  text-align: center;
+  letter-spacing: 20px;
+  font-weight: bolder;
+  font-family: "Segoe UI", fantasy;
+  text-shadow: 2px 2px #000;
+  color: bisque;
+}
+body {
+  background-image: url("https://media.istockphoto.com/id/1463137828/photo/3d-render-of-beauty-spa-saloon.jpg?s=612x612&w=0&k=20&c=-pkHokMX_f7t0xfvNkLsXOSsDVSYhfDz0yMrsrRU_Tg=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.checkboxes {
+  margin-left: 200px;
+  border: 0.5px dashed #fff;
+  width: 200px;
+  background-color: #000;
+  background: rgba(0, 0, 0, 0.6);
+  color: bisque;
+  padding: 20px 170px 20px 10px;
+  border-radius: 8px;
+  font-style: oblique;
+  font-family: fantasy;
+  border-radius: 8px;
+}

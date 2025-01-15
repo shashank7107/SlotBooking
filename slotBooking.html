@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="slotBooking.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Booking</title>
+    <link rel="stylesheet" href="slotBooking.css" />
+  </head>
+  <body>
+    <main class="formClass" id="mainKaId">
+      <!-- appointment booking -->
+      <header class="headerClass">
+        <h1 class="headerText">Book Your Appointment</h1>
+      </header>
+      <p class="FormParaClass"><em>please enter the following details</em></p>
+      <!-- form submission action -->
+      <form onsubmit="OnFormSubmit(event)" id="myForm">
+        <div class="formContent">
+          <!-- first name -->
+          <lable for="name">First Name:</lable>
+          <input type="text" />
+          <br />
+          <br />
+
+          <!-- email id -->
+          <lable for="text"> Mail ID:</lable>
+          <input type="email" />
+          <br />
+          <br />
+
+          <!-- gender selection -->
+          <!-- 
+      <input type="radio" id="male" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" value="female" />
+      <label for="female">Female</label> -->
+          <label>Gender</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <br />
+
+          <label for="date"> select your date </label>
+          <input type="datetime-local" id="date" />
+          <br />
+          <br />
+          <!-- checkboxes for services selection -->
+          <!-- parent div -->
+          <div class="cbParent">
+            <div class="checkboxes">
+              <input type="checkbox" id="hairtreatment" name="services" />
+              <label for="hairtreatment" class="labelText"
+                >Hair Treatment</label
+              >
+            </div>
+            <div class="checkboxes">
+              <input type="checkbox" id="hairspa" name="services" />
+              <label for="hairspa" class="labelText">Hair Spa</label>
+            </div>
+            <div class="checkboxes">
+              <input type="checkbox" id="haircut" name="services" />
+              <label for="haircut" class="labelText">Hair Cut</label>
+            </div>
+            <div class="checkboxes">
+              <input type="checkbox" id="haircolor" name="services" />
+              <label for="haircolor" class="labelText">Hair Color</label>
+            </div>
+            <div class="checkboxes">
+              <input type="checkbox" id="pedicure" name="services" />
+              <label for="pedicure" class="labelText">Pedicure</label>
+            </div>
+            <div class="checkboxes">
+              <input type="checkbox" id="spa" name="services" />
+              <label for="spa" class="labelText">Spa</label>
+            </div>
+          </div>
+          <span>
+            <button type="submit" role="button" class="submitButton">
+              Book your appointment
+            </button>
+          </span>
+        </div>
+      </form>
+      <br />
+      <!-- form End -->
+
+      <!--Dynamically created-->
+      <!-- <div id="resultText">Test default msg</div> -->
+    </main>
+  </body>
+</html>
