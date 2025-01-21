@@ -93,7 +93,7 @@ body {
   font-family: monospace;
 }
 .modal {
-  background: rgba(255, 255, 255, 1);
+  background: rgb(211, 181, 90);
   padding: 6px;
   border: 2px dashed;
   font-size: 17px;
