@@ -53,6 +53,7 @@ header {
   letter-spacing: 20px;
   font-weight: bolder;
 }
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://media.istockphoto.com/id/1463137828/photo/3d-render-of-beauty-spa-saloon.jpg?s=612x612&w=0&k=20&c=-pkHokMX_f7t0xfvNkLsXOSsDVSYhfDz0yMrsrRU_Tg=");
@@ -85,6 +86,13 @@ body {
   justify-content: center;
 }
 .submitButton {
+  background: rgba(255, 255, 255, 1);
+  padding: 6px;
+  border: 2px dashed;
+  font-size: 17px;
+  font-family: monospace;
+}
+.modal {
   background: rgba(255, 255, 255, 1);
   padding: 6px;
   border: 2px dashed;
