@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="slotBooking.js"></script>
+    <script defer src="slotBooking.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slot Booking</title>
     <link rel="stylesheet" href="slotBooking.css" />
+    <style>
+      /* Modal styling */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      .modal-content button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .modal-content button:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
     <main class="formClass" id="mainKaId">
-      <!-- appointment booking -->
       <header class="headerClass">
         <h1 class="headerText">Book Your Appointment</h1>
       </header>
       <p class="FormParaClass"><em>please enter the following details</em></p>
-      <!-- form submission action -->
       <form onsubmit="OnFormSubmit(event)" id="myForm">
         <div class="formContent">
-          <!-- first name -->
-          <lable for="name">Your Name:</lable>
-          <input type="text" required />
-          <br />
-          <br />
-
-          <!-- email id -->
-          <lable for="text"> Mail ID:</lable>
-          <input type="email" required />
-          <br />
-          <br />
-
-          <!-- gender selection -->
-          <!-- 
-      <input type="radio" id="male" value="male" />
-      <label for="male">Male</label>
-      <input type="radio" id="female" value="female" />
-      <label for="female">Female</label> -->
-          <label>Gender</label>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" required />
+          <br /><br />
+          <label for="email">Mail ID:</label>
+          <input type="email" id="email" required />
+          <br /><br />
+          <label>Gender:</label>
           <input type="radio" id="male" name="gender" value="male" required />
           <label for="male">Male</label>
           <input
@@ -45,15 +65,11 @@
             value="female"
             required
           />
-          <label for="female">Female</label><br />
-          <br />
-
-          <label for="date"> select your date </label>
+          <label for="female">Female</label>
+          <br /><br />
+          <label for="date">Select your date:</label>
           <input type="datetime-local" id="date" required />
-          <br />
-          <br />
-          <!-- checkboxes for services selection -->
-          <!-- parent div -->
+          <br /><br />
           <div class="cbParent">
             <div class="checkboxes">
               <input type="checkbox" id="hairtreatment" name="services" />
@@ -82,18 +98,20 @@
               <label for="spa" class="labelText">Spa</label>
             </div>
           </div>
-          <span>
-            <button type="submit" role="button" class="submitButton">
-              Book your appointment
-            </button>
-          </span>
+          <button type="submit" role="button" class="submitButton">
+            Book your appointment
+          </button>
         </div>
       </form>
-      <br />
-      <!-- form End -->
 
-      <!--Dynamically created-->
-      <!-- <div id="resultText">Test default msg</div> -->
+      <!-- Modal -->
+      <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+          <h2>Appointment Confirmed!</h2>
+          <p>Thank you for booking your appointment.</p>
+          <button onclick="closeModal()">Close</button>
+        </div>
+      </div>
     </main>
   </body>
 </html>
